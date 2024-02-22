@@ -68,11 +68,11 @@ function playGame() {
 
     let finalMessage;
     if (playerScore > computerScore) {
-        finalMessage = "Player Wins! Try Again?";
+        finalMessage = `You win! Final score: ${playerScore} - ${computerScore}. Try Again?`;
     } else if (computerScore > playerScore) {
-        finalMessage = "Computer Wins! Try Again?";
+        finalMessage = `Computer Wins! Final score: ${playerScore} - ${computerScore}. Try Again?`;
     } else {
-        finalMessage = "It's a tie! Try Again?";
+        finalMessage = `It's a tie! Final score: ${playerScore} - ${computerScore}. Try Again?`;
     }
 
     alert(finalMessage);
